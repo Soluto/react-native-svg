@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "react-native start"
+    "start": "react-native start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "^15.1.0",
     "react-native": "^0.32.0",
     "react-native-root-modal": "^1.0.4",
-    "react-native-svg": "../"
-  }
+    "react-native-svg": "../",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
